@@ -29,8 +29,8 @@ The repository is designed for efficient interview preparation:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dsa-practice.git
-cd dsa-practice
+git clone https://github.com/vivitali/algo-tasks.git
+cd algo-tasks
 
 # Install JavaScript dependencies
 npm install
