@@ -2,9 +2,9 @@
 
 A comprehensive collection of data structures and algorithms for coding interview preparation. This repository is structured to optimize learning and practice with implementations in both JavaScript and Python.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/dsa-practice)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/dsa-practice)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/dsa-practice?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/vivitali/algo-tasks)
+![GitHub last commit](https://img.shields.io/github/last-commit/vivitali/algo-tasks)
+![GitHub stars](https://img.shields.io/github/stars/vivitali/algo-tasks?style=social)
 
 ## 📚 Repository Structure
 
