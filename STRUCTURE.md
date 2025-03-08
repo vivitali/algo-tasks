@@ -1,5 +1,5 @@
 ```plaintext
-dsa-practice/
+algo-tasks/
 ├── algorithms/
 │   ├── arrays/
 │   │   ├── README.md           # Explains array concepts, common patterns, and techniques
