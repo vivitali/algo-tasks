@@ -2,20 +2,27 @@
  * @param {number[][]} intervals
  * @return {number}
  */
-var minMeetingRooms = function(intervals) {
-    const starts = [...intervals].sort((a,b) => a[0] - b[0]);
-    const ends = [...intervals].sort((a,b) => a[1] - b[1]);
+var minMeetingRooms = function (intervals) {
+    if (intervals.length <= 1) return intervals.length
+    intervals.sort((a, b) => a[0] - b[0])
 
-    let rooms = 0;
-    let endIdx = 0;
+    const endTimes = [intervals[0][1]];
 
-    for (let i = 0; i < starts.length; i++) {
-        if (starts[i][0] < ends[endIdx][1]) {
-            rooms++;
-        } else {
-            endIdx++;
+    for (let i = 1; i < intervals.length ; i++) {
+        const [start, end] = intervals[i];
+
+        if (start >= endTimes[0]) {
+            endTimes.shift()
         }
+
+        let pos = 0;
+        while(pos< endTimes.length && endTimes[pos]<end) {
+            pos++
+        }
+        endTimes.splice(pos, 0, end)
+
+
     }
 
-    return rooms;
+    return endTimes.length
 };
