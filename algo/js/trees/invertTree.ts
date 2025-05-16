@@ -30,5 +30,6 @@ function invertTree(root: TreeNode | null): TreeNode | null {
     let l = invertTree(root.left)
     root.left = r
     root.right = l
+
     return root;
 };
