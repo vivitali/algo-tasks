@@ -16,7 +16,7 @@ import { TreeNode } from "./TreeNode"
 
 const isSubtreeSame = (a: TreeNode | null, b: TreeNode | null): boolean => {
     if (!a && !b) return true
-    if (a?.val === b?.val) {
+    if (a && b && a?.val === b?.val) {
         return isSubtreeSame(a.left, b.left) && isSubtreeSame(a.right, b.right)
     }
     return false
